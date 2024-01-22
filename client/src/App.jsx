@@ -1,4 +1,5 @@
 import AddPage from "./pages/AddPage"
+import Basket from "./pages/Basket"
 import DetailPage from "./pages/DetailPage"
 import Home from "./pages/Home"
 import Wishlist from "./pages/Wishlist"
@@ -13,6 +14,7 @@ function App() {
       <Route path="/" element={<Home/>}/>
       <Route path="/add" element={<AddPage/>}/>
       <Route path="/wishlist" element={<Wishlist/>}/>
+      <Route path="/basket" element={<Basket/>}/>
       <Route path="/detail/:id" element={<DetailPage/>}/>
      </Routes>
     </>

@@ -2,9 +2,11 @@ import React, { useContext, useEffect, useState } from 'react'
 import "./index.scss"
 import { Link } from 'react-router-dom'
 import { WishlistContext } from '../../Context/wishlistContext'
+import { BasketContext } from '../../Context/basketContext'
 
 const Courses = () => {
     const [data, setdata] = useState([])
+    const { addToBasket } = useContext(BasketContext)
     const {addToWishlist} =useContext(WishlistContext)
 
     const fetchData = async () => {
@@ -32,6 +34,7 @@ const Courses = () => {
                         <li>{item.author}</li>
                         <li>{item.price}</li>
                         <li><button onClick={()=>addToWishlist(item)}>Wishlist</button></li>
+                        <li><button onClick={()=>addToBasket(item)}>Basket</button></li>
                         <li><Link to={`/detail/${item._id}`}>Detail</Link></li>
                     </ul>
                 ))}
