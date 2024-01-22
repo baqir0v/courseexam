@@ -1,0 +1,46 @@
+.addpage{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    form{
+        margin-top: 200px;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        input{
+            width: 500px;
+            height: 50px;
+            padding-left: 20px;
+            font-size: 18px;
+        }
+        button{
+            width: 120px;
+            height: 40px;
+        }
+    }
+    table{
+        margin-top: 50px;
+        border: 1px solid black;
+        tr{
+            td{
+                border: 1px solid black;
+                padding:0px 10px;
+                img{
+                    width: 250px;
+                }
+            }
+            th{
+                padding:10px 10px;
+                border: 1px solid black;
+            }
+        }
+    }
+    .sortsearch{
+        display: flex;
+    }
+}
